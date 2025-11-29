@@ -147,7 +147,10 @@ main {
 }
 
 .minimized {
+	
     width: 100px !important;
+	
+	
     /* height: 60px !important; */
 }
 
@@ -222,6 +225,15 @@ main {
 		width: 100vw;
 		height: 100vh;
 		border-radius: 0;
+	}
+
+	.minimized {
+		
+		
+		top: auto;
+		left: auto;
+	
+		
 	}
 
 	main {
