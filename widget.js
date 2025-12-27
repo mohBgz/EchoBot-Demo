@@ -2,10 +2,12 @@
 	const iframe = document.createElement("iframe");
 	iframe.className = "chat-widget minimized";
 
-	iframe.src =
-		window.location.hostname === "localhost"
-			? "http://localhost:5173"
-			: "https://echobot.mohamedbgz.dev";
+	iframe.src = "http://192.168.0.109:5173"
+	// iframe.src =
+	// 	window.location.hostname === "localhost"
+	// 		? "http://localhost:5173"
+	// 		: "https://echobot.mohamedbgz.dev";
+			
 
 	document.body.appendChild(iframe);
 

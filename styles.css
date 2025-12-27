@@ -42,8 +42,9 @@ header {
 	box-shadow: -7px 22px 28px -20px rgba(36, 67, 227, 0.72);
 
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	gap:32px;
 }
 
 .brand {
@@ -78,7 +79,7 @@ main {
 	color: transparent;
 }
 .gradient-text-3 {
-	background: linear-gradient(90deg, #bdbcbc, #ffffff);
+	background: linear-gradient(90deg, #ffffff, #a3e3f7);
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: transparent;
@@ -124,7 +125,8 @@ main {
 	display: flex;
 	align-items: center;
 	gap: 10px;
-
+	font-weight: 400;
+	
 	cursor: pointer;
 	transition: all 200ms;
 }
@@ -229,7 +231,7 @@ main {
 
 	.minimized {
 		
-		
+		height: 100px;
 		top: auto;
 		left: auto;
 	
