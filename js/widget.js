@@ -2,8 +2,8 @@
 	const iframe = document.createElement("iframe");
 	iframe.className = "chat-widget minimized ";
 
-	//iframe.src = "https://echobot.mohamedbgz.dev";
-	iframe.src = "http://localhost:5173";
+	iframe.src = "https://echobot.mohamedbgz.dev";
+	//iframe.src = "http://localhost:5173";
 
 	document.body.appendChild(iframe);
 	const event = new CustomEvent("iframe:created", { detail: { iframe } });
