@@ -3,62 +3,213 @@
 	<head>
 		<title>Chatbot Widget Test</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./styles.css">
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/widget.css" />
 	</head>
 
 	<body>
-		<header>
-			<div class="brand">
-				<div class="name">EchoBot</div>
-				<img class="logo" src="./icons/bot-message-square.svg" alt="" />
-			</div>
-
-			<a href="https://github.com/mohBgz/docs-chat-bot">
-				<div class="github">
-					<img src="./icons/github.svg" alt="" />
-					<div class="gradient-text-3 ">View on Github</div>
+		<!-- Navigation Header -->
+		<header class="navbar">
+			<div class="nav-container">
+				<div class="brand">
+					<img
+						class="logo"
+						src="./icons/bot-message-square.svg"
+						alt="EchoBot Logo"
+					/>
+					<div class="name">EchoBot</div>
 				</div>
-			</a>
+
+				<nav class="nav-links">
+					<a href="#features" class="nav-link">Features</a>
+
+					<a href="#integrations" class="nav-link">Integrations</a>
+					<a
+						href="https://github.com/mohBgz/EchoBot"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="nav-link github-link"
+					>
+						<img src="./icons/github.svg" alt="GitHub" />
+						GitHub
+					</a>
+				</nav>
+			</div>
 		</header>
 
 		<div id="chat-overlay" class="chat-overlay"></div>
 
 		<main>
-			<h1 class="title-text">
-				Welcome to <span class="highlight">EchoBot</span>
-				<div>Test Page</div>
-			</h1>
+			<!-- Hero Section -->
+			<section class="hero">
+				<div class="hero-content">
+					<h1 class="hero-title">
+						Instant AI Support,
+						<span class="highlight">For Any Website</span>
+					</h1>
 
-			<div class="features">
-				<div class="feature-item">
-					<img src="./icons/play.svg" class="icon" alt="" />
-					<p class="gradient-text-2">Plug & Play AI for Your Website</p>
-				</div>
-
-				<div class="feature-item">
-					<img src="./icons/files.svg" class="icon" alt="" />
-					<p class="gradient-text-2">
-						Embed our widget, upload your content, and let AI handle customer
-						questions automatically.
+					<p class="hero-subtitle">
+						Add an intelligent chatbot to your website in minutes. No coding
+						required. Works with any content.
 					</p>
+					<div class="hero-ctas">
+						<button class="btn btn-primary openPanelbtn" id="try-now-btn">
+							Try Demo
+						</button>
+						<a
+							href="https://github.com/mohBgz/EchoBot"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-secondary"
+						>
+							<img src="./icons/github.svg" alt="" />
+							View on GitHub
+						</a>
+					</div>
 				</div>
+				<div class="hero-video">
+					<video
+						class="hero-video"
+						autoplay
+						muted
+						loop
+						playsinline
+						preload="metadata"
+					>
+						<source src="./videos/hero-echoBot.mp4" type="video/mp4" />
+					</video>
+				</div>
+			</section>
 
-				<div class="feature-item">
-					<img src="./icons/bot.svg" class="icon" alt="" />
-					<p class="gradient-text-2">
-						Works with any site. Supports CSV, PDF, DOCX, and CMS integration.
-					</p>
-				</div>
+			<!-- Features Section -->
+			<section id="features" class="features-section">
+				<h2 class="section-title">Powerful Features</h2>
+				<div class="features-grid">
+					<div class="feature-card">
+						<div class="feature-icon">
+							<img src="./icons/play.svg" alt="" />
+						</div>
+						<h3>Plug & Play</h3>
+						<p>
+							Embed our widget with a single script tag. No complex setup or
+							configuration needed.
+						</p>
+					</div>
 
-				<div class="feature-item">
-					<img src="./icons/test.svg" class="icon" alt="" />
-					<p class="gradient-text-2">
-						This page is only for testing the chatbot iframe widget.
-					</p>
+					<div class="feature-card">
+						<div class="feature-icon">
+							<img src="./icons/files.svg" alt="" />
+						</div>
+						<h3>Multi-Format Support</h3>
+						<p>
+							Works with CSV, PDF, DOCX files. Upload your content and let AI
+							learn from it automatically.
+						</p>
+					</div>
+
+					<div class="feature-card">
+						<div class="feature-icon">
+							<img src="./icons/bot.svg" alt="" />
+						</div>
+						<h3>Universal Integration</h3>
+						<p>
+							Works with any website, CMS platform, or custom application. Zero
+							dependencies.
+						</p>
+					</div>
+
+					<div class="feature-card">
+						<div class="feature-icon">
+							<img src="./icons/test.svg" alt="" />
+						</div>
+						<h3>Customizable</h3>
+						<p>
+							Match your brand with customizable colors, positions, and behavior
+							settings.
+						</p>
+					</div>
 				</div>
-			</div>
+			</section>
+
+			<!-- Integrations Section -->
+			<section id="integrations" class="integrations">
+				<h2 class="section-title">Enhance Your Website with EchoBot AI</h2>
+
+				<div class="integartion-content">
+					<h3 class="integartion-subtitle">
+						Learn how you can intergare EchoBot into your website and more,
+						visit the docs on github.
+					</h3>
+					<a
+						href="https://github.com/mohBgz/EchoBot"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="btn-primary visit-docs"
+					>
+						<h3>Visit Docs</h3>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+						>
+							<path d="M7 7h10v10" />
+							<path d="M7 17 17 7" />
+						</svg>
+					</a>
+				</div>
+			</section>
+
+			<!-- CTA Section -->
+			<section class="cta-section">
+				<div class="cta-content">
+					<h2>Ready to Power Your Support?</h2>
+					<p>
+						Start using EchoBot and get answers from any document you upload!
+					</p>
+					<button class="btn btn-secondary btn-lg openPanelbtn" id="cta-btn">
+						Try the Demo Widget
+					</button>
+				</div>
+			</section>
 		</main>
 
-		<script src="./widget.js"></script>
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer-content">
+				<div class="footer-section">
+					<h4>EchoBot</h4>
+					<p>AI-powered customer support for every website.</p>
+				</div>
+				<div class="footer-section">
+					<h4>Links</h4>
+					<ul>
+						<li><a href="#features">Features</a></li>
+
+						<li>
+							<a
+								href="https://github.com/mohBgz/EchoBot"
+								target="_blank"
+								rel="noopener noreferrer"
+								>GitHub</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-section">
+					<h4>© 2025</h4>
+					<p>EchoBot. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="./js/openWidgetButton.js"></script>
+		<script src="./js/widget.js"></script>
 	</body>
 </html>
