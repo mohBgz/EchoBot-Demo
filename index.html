@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Chatbot Widget Test</title>
+		<title>Echo Demo</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="./icons/bot.svg" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./icons/bot.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./css/styles.css" />
 		<link rel="stylesheet" href="./css/widget.css" />
@@ -11,7 +13,12 @@
 		<!-- Navigation Header -->
 		<header class="navbar">
 			<div class="nav-container">
-				<div class="brand">
+				<div
+					class="brand"
+					onclick="
+					window.scrollTo({ top: 0, behavior: 'smooth' });
+				"
+				>
 					<img
 						class="logo"
 						src="./icons/bot-message-square.svg"
@@ -208,7 +215,7 @@
 				</div>
 			</div>
 		</footer>
-		
+
 		<script src="./js/openWidgetButton.js"></script>
 		<script src="./js/widget.js"></script>
 	</body>

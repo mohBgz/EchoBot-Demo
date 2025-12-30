@@ -4,6 +4,7 @@
 	let iframe = null;
 
 	window.addEventListener("iframe:created", (e) => {
+		
 		iframe = e.detail.iframe;
 	});
 
